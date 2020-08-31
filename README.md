@@ -2,6 +2,8 @@
 
 A simple program that uses Selenium and Chromedriver to purchase items from SupremeNewYork at a fast rate.
 
+Make sure to install Selenium and Chromedriver before starting.
+
 HOW IT WORKS
 ------------
 1. Run bot.py on your computer.
