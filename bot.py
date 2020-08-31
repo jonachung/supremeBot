@@ -27,6 +27,10 @@ def order():
     driver.find_element_by_xpath('//*[@id="rnsnckrn"]').send_keys(keys['card_number'])
     driver.find_element_by_xpath('//*[@id="credit_card_month"]').send_keys(keys['card_month'])
     driver.find_element_by_xpath('//*[@id="credit_card_year"]').send_keys(keys['card_year'])
+    
+    # Terms and conditions
+    checkBoxes = driver.find_elements_by_class_name('iCheck-helper')
+    checkBoxes[1].click()
 
     process_payment = driver.find_element_by_class_name('button ')
     process_payment.click()
